@@ -51,3 +51,14 @@ multiqc -o trimmed_multiqc trimmed_fastqc
 ```
 До:
 ![image](https://user-images.githubusercontent.com/93254228/139106716-fc698ed1-bc4b-450d-918e-ac477bd5076b.png)
+После:
+![image](https://user-images.githubusercontent.com/93254228/139107030-1b697598-cba6-4479-af16-f18fe568631b.png)
+До:
+![fastqc_per_base_sequence_quality_plot](https://user-images.githubusercontent.com/93254228/139107255-cd4f91f1-d8c4-4c1f-afa7-c50a0cc11828.png)
+После:
+![fastqc_per_base_sequence_quality_plot (2)](https://user-images.githubusercontent.com/93254228/139107404-0a72b82b-edec-41d4-b6f6-91071e113db5.png)
+До:
+![fastqc_adapter_content_plot](https://user-images.githubusercontent.com/93254228/139107722-e90c7234-980a-46cd-a0e3-b4659ab9cdf7.png)
+После:
+![fastqc_adapter_content_plot (2)](https://user-images.githubusercontent.com/93254228/139107851-7398e86e-3cf6-48ef-898a-2af14592b031.png)
+
