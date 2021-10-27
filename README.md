@@ -51,4 +51,3 @@ multiqc -o trimmed_multiqc trimmed_fastqc
 ```
 До:
 ![image](file:///C:/Users/User/Desktop/html/multiqc_report.html#general_stats)
-8.
