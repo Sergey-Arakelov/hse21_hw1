@@ -50,4 +50,4 @@ mkdir trimmed_multiqc
 multiqc -o trimmed_multiqc trimmed_fastqc
 ```
 До:
-![image](file:///C:/Users/User/Desktop/html/multiqc_report.html#general_stats)
+![image](https://user-images.githubusercontent.com/93254228/139106716-fc698ed1-bc4b-450d-918e-ac477bd5076b.png)
