@@ -73,4 +73,15 @@ time platanus scaffold -o Poil -c Poil_contig.fa -IP1 trimmed_fastq/pe_R1.fastq.
 ```
 11. Анализ скаффолдов и количества гэпов:
 ![image](https://user-images.githubusercontent.com/93254228/139111511-316cf8ef-f734-4720-a24d-514b2a7a158c.png)
-
+12. Ссылка на Google Colab:
+https://colab.research.google.com/drive/1u7JhoyUxXzXgWhEnajzofBybfwpSTvNa?usp=sharing
+13. Идём дальше. Нужно выделить самый длинный скаффолд в отдельный файл:
+```
+echo scaffold1_len3831667_cov231 > name_scaff.txt
+seqtk subseq Poil_scaffold.fa name_scaff.txt > BigScaff.fna
+rm -r name_scaff.txt
+```
+14. Используем potanus gap_close для уменьшения количества гэпов с помощью подрезанных чтений:
+```
+time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 trimmed_fastq/pe_R1.fastq.trimmed  trimmed_fastq/pe_R2.fastq.trimmed -OP2 trimmed_fastq/mp_R1.fastq.int_trimmed trimmed_fastq/mp_R2.fastq.int_trimmed 2> gapclose.log
+```
