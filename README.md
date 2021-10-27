@@ -94,4 +94,4 @@ rm -r name_scaff.txt
 16. Снова идём в коллаб, анализируем самый длинный скаффолд:
 ![image](https://user-images.githubusercontent.com/93254228/139129404-ffe425ee-86ad-4906-ba5c-d0275494b8bf.png)
 17. Тот же анализ, но для longest проделать не получилось, так как он весит 0 Кб
-# Итоговые прикреплённые файлы: scaffold.fa и contig.fa, ссылка на Google Colab, а также html-файлы. Вместо нулевого файла longest я загрузил файл gapClosed.
+# Итоговые прикреплённые файлы: scaffold.fa и contig.fa, файл формата ipynb с кодом, а также html-файлы. Вместо нулевого файла longest я загрузил файл gapClosed.
