@@ -71,3 +71,6 @@ time platanus assemble -o Poil -f trimmed_fastq/pe_R1.fastq.trimmed trimmed_fast
 ```
 time platanus scaffold -o Poil -c Poil_contig.fa -IP1 trimmed_fastq/pe_R1.fastq.trimmed  trimmed_fastq/pe_R2.fastq.trimmed -OP2 trimmed_fastq/mp_R1.fastq.int_trimmed trimmed_fastq/mp_R2.fastq.int_trimmed 2> scaffold.log
 ```
+11. Анализ скаффолдов и количества гэпов:
+![image](https://user-images.githubusercontent.com/93254228/139111511-316cf8ef-f734-4720-a24d-514b2a7a158c.png)
+
