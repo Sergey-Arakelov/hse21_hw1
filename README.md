@@ -61,4 +61,7 @@ multiqc -o trimmed_multiqc trimmed_fastqc
 ![fastqc_adapter_content_plot](https://user-images.githubusercontent.com/93254228/139107722-e90c7234-980a-46cd-a0e3-b4659ab9cdf7.png)
 После:
 ![fastqc_adapter_content_plot (2)](https://user-images.githubusercontent.com/93254228/139107851-7398e86e-3cf6-48ef-898a-2af14592b031.png)
-
+9. Используя программу platanus assemble, собираем контиги из подрезанных чтений:
+```
+time platanus assemble -o Poil -f trimmed_fastq/pe_R1.fastq.trimmed trimmed_fastq/pe_R2.fastq.trimmed 2> assemble.log
+```
