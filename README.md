@@ -67,4 +67,7 @@ time platanus assemble -o Poil -f trimmed_fastq/pe_R1.fastq.trimmed trimmed_fast
 ```
 9. Далее перейдём в Google Colab. Там проанализируем полученные контиги: общее кол-во контигов, их общая длина, длина самого длинного контига, N50:
 ![image](https://user-images.githubusercontent.com/93254228/139109767-b94baa83-7260-4ce3-9caa-f0031cbdf9ad.png)
-10. 
+10. Теперь используем platanus scaffold, она соберёт скаффолды из контигов, а также из подрезанных чтений:
+```
+time platanus scaffold -o Poil -c Poil_contig.fa -IP1 trimmed_fastq/pe_R1.fastq.trimmed  trimmed_fastq/pe_R2.fastq.trimmed -OP2 trimmed_fastq/mp_R1.fastq.int_trimmed trimmed_fastq/mp_R2.fastq.int_trimmed 2> scaffold.log
+```
