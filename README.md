@@ -65,3 +65,5 @@ multiqc -o trimmed_multiqc trimmed_fastqc
 ```
 time platanus assemble -o Poil -f trimmed_fastq/pe_R1.fastq.trimmed trimmed_fastq/pe_R2.fastq.trimmed 2> assemble.log
 ```
+10. Далее перейдём в Google Colab. Там проанализируем полученные контиги:
+![image](https://user-images.githubusercontent.com/93254228/139109551-93966034-fccd-487e-9f1c-c7114589c01f.png)
