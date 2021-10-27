@@ -85,3 +85,12 @@ rm -r name_scaff.txt
 ```
 time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 trimmed_fastq/pe_R1.fastq.trimmed  trimmed_fastq/pe_R2.fastq.trimmed -OP2 trimmed_fastq/mp_R1.fastq.int_trimmed trimmed_fastq/mp_R2.fastq.int_trimmed 2> gapclose.log
 ```
+15. Опять достаём самый длинный скаффолд (но уже после gap_close):
+```
+echo scaffold1_cov231 > name_scaff.txt
+seqtk subseq Poil_gapClosed.fa name_scaff.txt > longest.fna
+rm -r name_scaff.txt
+```
+16. Снова идём в коллаб, анализируем самый длинный скаффолд:
+![image](https://user-images.githubusercontent.com/93254228/139129404-ffe425ee-86ad-4906-ba5c-d0275494b8bf.png)
+17. Тот же анализ, но для longest проделать не получилось, так как он весит 0 Кб
